@@ -3,7 +3,6 @@ import { StyleSheet, Text, View, ImageBackground, Button } from "react-native";
 import { Apresentation } from "./src/Components/Apresentation";
 import { Count } from "./src/Components/Contador";
 import React from "react";
-import { ListItems } from "./src/Components/ListItems";
 
 export default function App() {
   const [count, setCount] = React.useState(false);
@@ -26,14 +25,6 @@ export default function App() {
             onPress={() => setCount(!count)}
           />
         )}
-        {/* {group && <ListItems />} */}
-        {/* {!group && (
-          <Button
-            title="Grupo"
-            color="#5cceee"
-            onPress={() => setGroup(!group)}
-          />
-        )} */}
       </ImageBackground>
       <StatusBar style="auto" />
     </View>
